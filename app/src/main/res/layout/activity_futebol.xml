@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pebolim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Futebol"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/pebolim"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/text1"
+        android:layout_marginLeft="45dp"/>
+    <TextView
+        android:id="@+id/cincof"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="50sp"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:layout_alignBaseline="@+id/cincof"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        />
+    <TextView
+        android:id="@+id/um"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="50sp"
+        android:layout_marginRight="16dp"
+        android:layout_alignBaseline="@+id/cincof"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/vit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="vitórias: 0"
+        android:textSize="30sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/um"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/vitorias"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="vitórias: 0"
+        android:textSize="30sp"
+        android:layout_below="@+id/um"
+        android:layout_marginLeft="16dp"
+        android:layout_alignBaseline="@+id/vit" />
+    <TextView
+        android:id="@+id/addgols"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="adicionar gols:"
+        android:textSize="22sp"
+        android:layout_below="@+id/vitorias"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp" />
+    <Button
+        android:id="@+id/btnaddf"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addgols"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:background="#80cbc4"
+        android:text="+1"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addgols"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="#80cbc4"
+        android:text="-1"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/detempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botao"
+        android:text="Determinar Tempo"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/detempo"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/detempo"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+
+        android:src="@drawable/ic_play_arrow"
+
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/detempo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+
+        android:src="@drawable/ic_pause"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12s"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
